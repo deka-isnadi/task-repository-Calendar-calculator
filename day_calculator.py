@@ -16,7 +16,7 @@ def input_validation():
             
             year = int(input("Input Year (YYYY): "))
             if year <1 :
-                print(" Year number must bigger or equal to 1 !")
+                print("Year number must bigger or equal to 1 !")
                 continue
             return date, month, year
 
@@ -40,7 +40,7 @@ if( year % 4 == 0 and year %100 != 0) or (year % 400 == 0):
 else:
     print(f"Year of {year} is NOT a Leap Year")
 
-# Zelkler Congruence
+# Zeller Congruence
 # Bulan disesuaiokan dengan tahun 
 # January (1) + 12 = 13
 if month == 1 or month == 2:
@@ -54,22 +54,22 @@ J = year // 100
 K = year % 100
 h = (date + ((13 * (month+1)) // 5) + (K) + (K // 4) + (J // 4) - (2 * J)) % 7
 
-print(f" Month Number according to Zelkler Congruence : {month}")
+print(f" Month Number according to Zeller Congruence : {month}")
 print(f" Century number  : {J} ")
 print(f" Year number  : {K}")
 print(f" Day Number {h} ")
-print(f" Zelkler Congruence formula h= ( {date} + {((13*(month + 1))//5)} + {K} + {K//4} + {J//4} - {2*J} ) mod 7 ")
+print(f" Zeller Congruence formula h= ( {date} + {((13*(month + 1))//5)} + {K} + {K//4} + {J//4} - {2*J} ) mod 7 ")
 if h==2:
-    print(f"Your date according to Zelkler Congruence: {date} - {month} - {year} is MONDAY" )
+    print(f"Your date according to Zeller Congruence: {date} - {month} - {year} is MONDAY" )
 if h==3:
-    print(f"Your date according to Zelkler Congruence: {date} - {month} - {year} is TUESDAY" )
+    print(f"Your date according to Zeller Congruence: {date} - {month} - {year} is TUESDAY" )
 if h==4:
-    print(f"Your date according to Zelkler Congruence: {date} - {month} - {year} is WEDNESDAY" ) 
+    print(f"Your date according to Zeller Congruence: {date} - {month} - {year} is WEDNESDAY" ) 
 if h==5:
-    print(f"Your date according to Zelkler Congruence: {date} - {month} - {year} is THURSDAY" )
+    print(f"Your date according to Zeller Congruence: {date} - {month} - {year} is THURSDAY" )
 if h==6:
-    print(f"Your date according to Zelkler Congruence: {date} - {month} - {year} is FRIDAY" )
+    print(f"Your date according to Zeller Congruence: {date} - {month} - {year} is FRIDAY" )
 if h==0:
-    print(f"Your date according to Zelkler Congruence: {date} - {month} - {year} is SATURDAY" )
+    print(f"Your date according to Zeller Congruence: {date} - {month} - {year} is SATURDAY" )
 if h==1:
-    print(f"Your date according to Zelkler Congruence: {date} - {month} - {year} is SUNDAY" )
+    print(f"Your date according to Zeller Congruence: {date} - {month} - {year} is SUNDAY" )
