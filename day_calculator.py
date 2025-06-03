@@ -23,7 +23,7 @@ def input_validation():
         except ValueError:
             print("Date must in numbers, please try again!")
 
-# Minta input valid
+# askin Valid Input
 print("Please enter Date :")
 date, month, year = input_validation()
 print("_________________________________________________")
@@ -32,7 +32,7 @@ print(" Date or month are valid")
 
 print(f"Your date are : {date} - {month} - {year}")
 
-# Tahun Kabisat YYYY/4 = habis,  tapi kalo habis dibagi 100 bukan kabisat
+# Leap Year YYYY/4 = no excess,  but of multiply of 100, it is not Leap Year
 # operator modulus
 
 if( year % 4 == 0 and year %100 != 0) or (year % 400 == 0):
@@ -41,7 +41,7 @@ else:
     print(f"Year of {year} is NOT a Leap Year")
 
 # Zeller Congruence
-# Bulan disesuaiokan dengan tahun 
+# Month and year adjusted according to Zeller Congruence
 # January (1) + 12 = 13
 if month == 1 or month == 2:
     month += 12
