@@ -94,7 +94,7 @@ if h==6:
 if h==0:
     print(f"Your date according to Zeller Congruence: {date} - {month} - {year} is SATURDAY" )
 if h==1:
-```
-
-Enjoy! 
     print(f"Your date according to Zeller Congruence: {date} - {month} - {year} is SUNDAY" )
+```
+Enjoy!
+
